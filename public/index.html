@@ -10,15 +10,15 @@
     <link rel="stylesheet" href="../public/css/tailwind.css">
     <title>Arstravel</title>
 </head>
-<body>
+<body class="font-Montserrat">
     <nav></nav>
     <div id="tab_bar"></div>
     <section class="w-full h-screen">
         <div id="home">
           <div class="w-full h-3/4 ">
             <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center">
-              <input class="text-xl outline-none p-3 rounded-full shadow-sm" placeholder="San Francisco" type="search" >
-              <button class="w-36 rounded-full text-xl text-primary font-semibold py-4 bg-white">
+              <input class="text-xl outline-none p-3 rounded-full shadow-sm transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-80" placeholder="San Francisco" type="search" >
+              <button class="w-36 rounded-full text-xl text-primary font-semibold py-4 bg-white transition-all duration-500 ease-in-out hover:bg-primary hover:text-white hover:translate-y-1 hover:scale-110">
                 Explore
               </button>
             </div>
@@ -27,7 +27,53 @@
             </div>
           </div>
         </div>
-        <div id="arstavel_choices"></div>
+        <div class="p-6" id="arstavel_choices">
+          <h2 class="text-3xl font-semibold text-primary mb-6"> Arstravel's Choice </h2>
+          <div class="w-auto h-72 items-center overflow-x-auto overscroll-x-contain scrollbar-hide flex gap-4">
+            <div class="card">
+              <div class="w-full h-3/5 rounded-t-lg bg-norway bg-cover"></div>
+              <div class="bg-secondary w-full h-2/5 rounded-b-lg px-4 py-2">
+                <p class="text-white font-semibold text-xl">Norway</p>
+                <p class="text-white text-md">Stunning fjords & Adventures! </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="w-full h-3/5 rounded-t-lg bg-new_york bg-cover"></div>
+              <div class="bg-white w-full h-2/5 rounded-b-lg px-4 py-2">
+                <p class="text-terciary font-semibold text-xl">New York</p>
+                <p class="text-terciary text-md">The City That Never Sleeps</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="w-full h-3/5 rounded-t-lg bg-seattle bg-cover"></div>
+              <div class="bg-secondary w-full h-2/5 rounded-b-lg px-4 py-2">
+                <p class="text-white font-semibold text-xl">Seattle</p>
+                <p class="text-white text-md">You won’t be left sleepless in Seattle</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="w-full h-3/5 rounded-t-lg bg-switzerland bg-cover"></div>
+              <div class="bg-white w-full h-2/5 rounded-b-lg px-4 py-2">
+                <p class="text-terciary font-semibold text-xl">Switzerland</p>
+                <p class="text-terciary text-md">Fresh air, pure water, alpine lush</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="w-full h-3/5 rounded-t-lg bg-yosemite bg-cover"></div>
+              <div class="bg-secondary w-full h-2/5 rounded-b-lg px-4 py-2">
+                <p class="text-white font-semibold text-xl">Yosemite</p>
+                <p class="text-white text-md">Immerse yourself in the nature</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="w-full h-3/5 rounded-t-lg bg-bali bg-cover"></div>
+              <div class="bg-white w-full h-2/5 rounded-b-lg px-4 py-2">
+                <p class="text-terciary font-semibold text-xl">Bali</p>
+                <p class="text-terciary text-md">A magical blend of culture & nature</p>
+              </div>
+            </div>
+          </div>
+        </div>
         <div id="arstavel_highlights"></div>
         <div id="faq"></div>
     </section>
