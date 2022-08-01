@@ -13,89 +13,98 @@
 <body class="font-Montserrat">
     <nav></nav>
     <main class="w-full h-auto">
-        <div id="home">
-          <div class="w-full h-3/4 ">
-            <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center">
-              <input class="text-xl outline-none p-3 rounded-full shadow-sm transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-80" placeholder="San Francisco" type="search" >
-              <button class="w-36 rounded-full text-xl text-primary font-semibold py-4 bg-white transition-all duration-500 ease-in-out hover:bg-primary hover:text-white hover:translate-y-1 hover:scale-110">
-                Explore
-              </button>
+        <div id="home" class="md:bg-sanFranciscoDesktop md:bg-cover md:bg-center md:bg-fixed">
+          <div class="w-full h-3/4 md:flex md:justify-center bg-black bg-opacity-20">
+            <div class="w-full h-full flex flex-col absolute space-y-80 sm:space-y-96 py-4 items-center md:items-start md:justify-center md:space-y-0 md:max-w-7xl md:pl-8">
+                <input class="text-xl outline-none p-3 rounded-full shadow-sm transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-80  md:hidden" placeholder="San Francisco" type="search" >
+                <div class="h-auto hidden md:block">
+                  <p class="text-4xl font-extrabold text-white mb-6">
+                    Find more locations like this
+                  </p>
+                </div>
+                <button class="w-36 rounded-full text-xl text-primary font-semibold py-4 bg-white transition-all duration-500 ease-in-out hover:bg-primary hover:text-white hover:translate-y-1 hover:scale-110 md:w-48">
+                  Explore
+                </button>
             </div>
-            <div class="w-full h-full">
-              <img src="./img/sanFrancisco.jpg" alt="">
-            </div>
-          </div>
-        </div>
-        <div id="arstravel_choices" class="p-6">
-          <h2 class="text-3xl font-semibold text-primary mb-6"> Arstravel's Choice </h2>
-          <div class="w-auto h-72 items-center overflow-x-auto overscroll-x-contain scrollbar-hide flex gap-4">
-            <div class="card">
-              <div class="w-full h-3/5 rounded-t-lg bg-norway bg-cover"></div>
-              <div class="bg-secondary w-full h-2/5 rounded-b-lg px-4 py-2">
-                <p class="text-white font-semibold text-xl">Norway</p>
-                <p class="text-white text-md">Stunning fjords & Adventures! </p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="w-full h-3/5 rounded-t-lg bg-new_york bg-cover"></div>
-              <div class="bg-white w-full h-2/5 rounded-b-lg px-4 py-2">
-                <p class="text-terciary font-semibold text-xl">New York</p>
-                <p class="text-terciary text-md">The City That Never Sleeps</p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="w-full h-3/5 rounded-t-lg bg-seattle bg-cover"></div>
-              <div class="bg-secondary w-full h-2/5 rounded-b-lg px-4 py-2">
-                <p class="text-white font-semibold text-xl">Seattle</p>
-                <p class="text-white text-md">You won’t be left sleepless in Seattle</p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="w-full h-3/5 rounded-t-lg bg-switzerland bg-cover"></div>
-              <div class="bg-white w-full h-2/5 rounded-b-lg px-4 py-2">
-                <p class="text-terciary font-semibold text-xl">Switzerland</p>
-                <p class="text-terciary text-md">Fresh air, pure water, alpine lush</p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="w-full h-3/5 rounded-t-lg bg-yosemite bg-cover"></div>
-              <div class="bg-secondary w-full h-2/5 rounded-b-lg px-4 py-2">
-                <p class="text-white font-semibold text-xl">Yosemite</p>
-                <p class="text-white text-md">Immerse yourself in the nature</p>
-              </div>
+            <div class="w-full h-full md:h-screen">
+              <img class="md:hidden" src="./img/sanFrancisco.jpg" alt="">
             </div>
           </div>
         </div>
-        <div id="arstravel_highlights" class="px-6 h-auto w-full">
-          <p class="text-3xl text-primary font-semibold pb-6">Arstravel Highlights</p>
-          <div class="grid gap-5 mb-6">
-            <div class="bg-chicago w-full h-96  bg-cover rounded-2xl">
-              <div class="card-bg-opacity rounded-2xl">
-                <p class="card-title">Chicago</p>
-                <p class="text-md pl-8 mr-24 text-white">2 rooms, 1 bathroom and kitchen</p>
+        <div id="arstravel_choices" class="md:max-w-7xl md:mx-auto">
+          <div class="m-6">
+            <h2 class="text-3xl font-semibold text-primary"> Arstravel's Choice </h2>
+            <div class="w-auto h-72 items-center overflow-x-auto overscroll-x-contain flex gap-4 md:h-96">
+              <div class="card">
+                <div class="w-full h-3/5 rounded-t-lg bg-norway bg-cover"></div>
+                <div class="bg-secondary w-full h-2/5 rounded-b-lg px-4 py-2">
+                  <p class="text-white font-semibold text-xl">Norway</p>
+                  <p class="text-white text-md">Stunning fjords & Adventures! </p>
+                </div>
               </div>
-            </div>
-            <div class="bg-LA w-full h-96  bg-cover rounded-2xl">
-              <div class="card-bg-opacity rounded-2xl">
-                <p class="card-title">Los Angeles</p>
-                <p class="text-md pl-8 mr-24 text-white">4 rooms, 3 bathrooms, kitchen and private pool</p>
+              <div class="card">
+                <div class="w-full h-3/5 rounded-t-lg bg-new_york bg-cover"></div>
+                <div class="bg-white w-full h-2/5 rounded-b-lg px-4 py-2">
+                  <p class="text-terciary font-semibold text-xl">New York</p>
+                  <p class="text-terciary text-md">The City That Never Sleeps</p>
+                </div>
               </div>
-            </div>
-            <div class="bg-miami w-full h-96  bg-cover rounded-2xl">
-              <div class="card-bg-opacity rounded-2xl">
-                <p class="card-title">Miami</p>
-                <p class="text-md pl-8 mr-24 text-white">3 rooms, 2 bathrooms, kitchen and amazing sea views</p>
+              <div class="card">
+                <div class="w-full h-3/5 rounded-t-lg bg-seattle bg-cover"></div>
+                <div class="bg-secondary w-full h-2/5 rounded-b-lg px-4 py-2">
+                  <p class="text-white font-semibold text-xl">Seattle</p>
+                  <p class="text-white text-md">You won’t be left sleepless in Seattle</p>
+                </div>
               </div>
-            </div>
-            <div class="bg-bali w-full h-96  bg-cover rounded-2xl">
-              <div class="card-bg-opacity rounded-2xl">
-                <p class="card-title">Bali</p>
-                <p class="text-md pl-8 mr-24 text-white">2 rooms, 2 bathrooms, kitchen and private pool</p>
+              <div class="card">
+                <div class="w-full h-3/5 rounded-t-lg bg-switzerland bg-cover"></div>
+                <div class="bg-white w-full h-2/5 rounded-b-lg px-4 py-2">
+                  <p class="text-terciary font-semibold text-xl">Switzerland</p>
+                  <p class="text-terciary text-md">Fresh air, pure water, alpine lush</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="w-full h-3/5 rounded-t-lg bg-yosemite bg-cover"></div>
+                <div class="bg-secondary w-full h-2/5 rounded-b-lg px-4 py-2">
+                  <p class="text-white font-semibold text-xl">Yosemite</p>
+                  <p class="text-white text-md">Immerse yourself in the nature</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div id="faq" class="w-full h-auto pb-6">
+        <div id="arstravel_highlights" class="p-6 h-auto w-full bg-gray-50">
+          <div class="h-auto w-full md:max-w-7xl md:mx-auto">
+            <p class="text-3xl text-primary font-semibold pb-6">Arstravel Highlights</p>
+            <div class="mb-6 grid gap-8 grid-rows-highlights md:grid-cols-2">
+              <div class="bg-chicago w-full bg-cover rounded-2xl md:row-start-1 md:row-end-3 md:col-start-1 md:col-end-3 hover:scale-105">
+                <div class="card-bg-opacity rounded-2xl">
+                  <p class="card-title">Chicago</p>
+                  <p class="text-md pl-8 mr-24 text-white">2 rooms, 1 bathroom and kitchen</p>
+                </div>
+              </div>
+              <div class="bg-LA w-full bg-cover rounded-2xl md:row-start-3 md:row-end-5 hover:scale-105">
+                <div class="card-bg-opacity rounded-2xl">
+                  <p class="card-title">Los Angeles</p>
+                  <p class="text-md pl-8 mr-24 text-white">4 rooms, 3 bathrooms, kitchen and private pool</p>
+                </div>
+              </div>
+              <div class="bg-miami w-full bg-cover rounded-2xl hover:scale-105">
+                <div class="card-bg-opacity rounded-2xl">
+                  <p class="card-title">Miami</p>
+                  <p class="text-md pl-8 mr-24 text-white">3 rooms, 2 bathrooms, kitchen and amazing sea views</p>
+                </div>
+              </div>
+              <div class="bg-bali w-full bg-cover rounded-2xl hover:scale-105">
+                <div class="card-bg-opacity rounded-2xl">
+                  <p class="card-title">Bali</p>
+                  <p class="text-md pl-8 mr-24 text-white">2 rooms, 2 bathrooms, kitchen and private pool</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="faq" class="w-full h-auto py-6 md:max-w-7xl md:mx-auto">
           <div class="w-full h-full px-6 flex flex-col gap-y-4">
             <p class="text-3xl text-primary font-semibold">FAQs</p>
             <div>
@@ -129,15 +138,17 @@
           </div>
         </div>
     </main>
-    <footer class="w-full h-auto bg-gray-50 p-6 space-y-2 mb-16">
-      <p class="text-lg">About</p>
-      <p class="text-sm text-gray-400">Investors</p>
-      <p class="text-sm text-gray-400">Careers</p>
-      <p class="text-sm text-gray-400">Terms and Conditions</p>
-      <p class="text-sm text-gray-400">Arstravel</p>
-      <p class="text-sm text-gray-400">Follow Us</p>
+    <footer class="w-full h-auto bg-gray-50 md:mb-0">
+      <div class="p-6 space-y-2 md:max-w-7xl md:mx-auto md:flex md:gap-10 md:justify-center md:items-center md:space-y-0">
+        <p class="text-lg">About</p>
+        <p class="text-sm text-gray-400 cursor-pointer">Investors</p>
+        <p class="text-sm text-gray-400 cursor-pointer">Careers</p>
+        <p class="text-sm text-gray-400 cursor-pointer">Terms and Conditions</p>
+        <p class="text-sm text-gray-400 cursor-pointer">Arstravel</p>
+        <p class="text-sm text-gray-400 cursor-pointer">Follow Us</p>
+      </div>
     </footer>
-    <div id="tab_bar" class="w-full h-16 bg-terciary fixed left-0 bottom-0 shadow-md flex gap-8 justify-center items-center">
+    <div id="tab_bar" class="w-full h-16 bg-terciary fixed left-0 bottom-0 shadow-md flex gap-8 justify-center items-center md:hidden">
       <a href="#home">
         <svg class="h-8 w-8 text-gray-200" viewBox="0 0 20 20" fill="currentColor">
           <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
@@ -151,6 +162,7 @@
       <a href="#arstravel_highlights">
         <svg class="h-8 w-8 text-gray-200" viewBox="0 0 20 20" fill="currentColor">
           <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
+        </svg>
       </a>
       <a href="https://github.com/arselt">
         <svg class="h-8 w-8 text-gray-200" viewBox="0 0 20 20" fill="currentColor">

@@ -33,6 +33,9 @@ module.exports = {
       fontFamily: {
         Montserrat: ["Montserrat", "sans-serif"],
       },
+      gridTemplateRows: {
+        'highlights': 'repeat(4, minmax(24rem, 1fr))',
+      }
     },
   },
   plugins: [
