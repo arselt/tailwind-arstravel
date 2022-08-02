@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,31 +10,31 @@
     <link rel="stylesheet" href="./css/tailwind.css">
     <title>Arstravel</title>
 </head>
-<body class="font-Montserrat">
-    <nav class="hidden w-full h-14 bg-white md:flex justify-center fixed z-10">
+<body class="font-Montserrat dark:bg-gray-900">
+    <nav class="hidden w-full h-14 bg-white md:flex justify-center fixed z-10 dark:bg-gray-900">
       <div class="flex justify-between max-w-7xl w-full items-center px-8">
         <div class="h-auto w-auto">
-          <p class="text-xl text-primary font-black">Arstravel</p>
+          <a href="#home"><p class="text-xl text-primary font-black">Arstravel</p></a>
         </div>
         <div class="flex gap-8">
-          <a class="font-bold text-md text-primary" href="#Home">Home</a>
-          <a class="font-bold text-md text-primary" href="#Home">Choices</a>
-          <a class="font-bold text-md text-primary" href="#Home">Highlights</a>
-          <a class="font-bold text-md text-primary" href="#Home">FAQs</a>
+          <a class="font-bold text-md text-primary" href="#home">Home</a>
+          <a class="font-bold text-md text-primary" href="#arstravel_choices">Choices</a>
+          <a class="font-bold text-md text-primary" href="#arstravel_highlights">Highlights</a>
+          <a class="font-bold text-md text-primary" href="#faq">FAQs</a>
         </div>
         <div class="flex gap-6">
-          <a href="#SearchBar">
-            <svg class="h-8 w-8 text-gray-300" viewBox="0 0 20 20" fill="currentColor">
+          <a href="#home">
+            <svg class="h-8 w-8 text-gray-300 hover:text-primary" viewBox="0 0 20 20" fill="currentColor">
               <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
             </svg>
           </a>
-          <button>
-            <svg class="h-8 w-8 text-gray-300" viewBox="0 0 20 20" fill="currentColor">
+          <button id="toggle">
+            <svg class="h-8 w-8 text-gray-300 hover:text-primary dark:text-primary" viewBox="0 0 20 20" fill="currentColor">
               <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
             </svg>
           </button>
           <a href="https://github.com/arselt">
-            <svg class="h-8 w-8 text-gray-300" viewBox="0 0 20 20" fill="currentColor">
+            <svg class="h-8 w-8 text-gray-300 hover:text-primary" viewBox="0 0 20 20" fill="currentColor">
               <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
             </svg>
           </a>
@@ -45,13 +45,13 @@
         <div id="home" class="md:bg-sanFranciscoDesktop md:bg-cover md:bg-center md:bg-fixed">
           <div class="w-full h-3/4 md:flex md:justify-center bg-black bg-opacity-20">
             <div class="w-full h-full flex flex-col absolute space-y-80 sm:space-y-96 py-4 items-center md:items-start md:justify-center md:space-y-0 md:max-w-7xl md:pl-8">
-                <input class="text-xl outline-none p-3 rounded-full shadow-sm transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-80  md:hidden" placeholder="San Francisco" id="SearchBar" type="search" >
+                <input class="text-xl outline-none p-3 rounded-full shadow-sm transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-80  md:hidden" placeholder="San Francisco" type="search" >
                 <div class="h-auto hidden md:block">
                   <p class="text-4xl font-extrabold text-white mb-6">
                     Find more locations like this
                   </p>
                 </div>
-                <button class="w-36 rounded-full text-xl text-primary font-semibold py-4 bg-white transition-all duration-500 ease-in-out hover:bg-primary hover:text-white hover:translate-y-1 hover:scale-110 md:w-48">
+                <button class="w-36 rounded-full text-xl text-primary font-semibold py-4 bg-white transition-all duration-500 ease-in-out hover:bg-primary hover:text-white hover:translate-y-1 hover:scale-110 md:w-48" id="explore_button">
                   Explore
                 </button>
             </div>
@@ -66,35 +66,35 @@
             <div class="w-auto h-72 items-center overflow-x-auto overscroll-x-contain flex gap-4 md:h-96">
               <div class="card">
                 <div class="w-full h-3/5 rounded-t-lg bg-norway bg-cover"></div>
-                <div class="bg-secondary w-full h-2/5 rounded-b-lg px-4 py-2">
+                <div class="bg-secondary w-full h-2/5 rounded-b-lg px-4 py-2 dark:bg-gray-800">
                   <p class="text-white font-semibold text-xl">Norway</p>
                   <p class="text-white text-md">Stunning fjords & Adventures! </p>
                 </div>
               </div>
               <div class="card">
                 <div class="w-full h-3/5 rounded-t-lg bg-new_york bg-cover"></div>
-                <div class="bg-white w-full h-2/5 rounded-b-lg px-4 py-2">
-                  <p class="text-terciary font-semibold text-xl">New York</p>
-                  <p class="text-terciary text-md">The City That Never Sleeps</p>
+                <div class="bg-white w-full h-2/5 rounded-b-lg px-4 py-2 dark:bg-gray-700">
+                  <p class="text-terciary font-semibold text-xl dark:text-white">New York</p>
+                  <p class="text-terciary text-md dark:text-white">The City That Never Sleeps</p>
                 </div>
               </div>
               <div class="card">
                 <div class="w-full h-3/5 rounded-t-lg bg-seattle bg-cover"></div>
-                <div class="bg-secondary w-full h-2/5 rounded-b-lg px-4 py-2">
+                <div class="bg-secondary w-full h-2/5 rounded-b-lg px-4 py-2 dark:bg-gray-800">
                   <p class="text-white font-semibold text-xl">Seattle</p>
                   <p class="text-white text-md">You won’t be left sleepless in Seattle</p>
                 </div>
               </div>
               <div class="card">
                 <div class="w-full h-3/5 rounded-t-lg bg-switzerland bg-cover"></div>
-                <div class="bg-white w-full h-2/5 rounded-b-lg px-4 py-2">
-                  <p class="text-terciary font-semibold text-xl">Switzerland</p>
-                  <p class="text-terciary text-md">Fresh air, pure water, alpine lush</p>
+                <div class="bg-white w-full h-2/5 rounded-b-lg px-4 py-2 dark:bg-gray-700">
+                  <p class="text-terciary font-semibold text-xl dark:text-white">Switzerland</p>
+                  <p class="text-terciary text-md dark:text-white">Fresh air, pure water, alpine lush</p>
                 </div>
               </div>
               <div class="card">
                 <div class="w-full h-3/5 rounded-t-lg bg-yosemite bg-cover"></div>
-                <div class="bg-secondary w-full h-2/5 rounded-b-lg px-4 py-2">
+                <div class="bg-secondary w-full h-2/5 rounded-b-lg px-4 py-2 dark:bg-gray-800">
                   <p class="text-white font-semibold text-xl">Yosemite</p>
                   <p class="text-white text-md">Immerse yourself in the nature</p>
                 </div>
@@ -102,7 +102,7 @@
             </div>
           </div>
         </div>
-        <div id="arstravel_highlights" class="p-6 h-auto w-full bg-gray-50">
+        <div id="arstravel_highlights" class="p-6 h-auto w-full bg-gray-50 dark:bg-gray-800">
           <div class="h-auto w-full md:max-w-7xl md:mx-auto">
             <p class="text-3xl text-primary font-semibold pb-6">Arstravel Highlights</p>
             <div class="mb-6 grid gap-8 grid-rows-highlights md:grid-cols-2">
@@ -137,39 +137,39 @@
           <div class="w-full h-full px-6 flex flex-col gap-y-4">
             <p class="text-3xl text-primary font-semibold">FAQs</p>
             <div>
-              <p class="text-xl font-medium text-primary">Cancelation and Refunds</p>
-              <p class="text-md pt-2">
+              <p class="text-xl font-medium text-primary dark:text-gray-100">Cancelation and Refunds</p>
+              <p class="text-md pt-2 dark:text-gray-50">
                 You must cancel before a week of the stay to have a valid cancelation and refund.
               </p>
             </div>
             <div>
-              <p class="text-xl font-medium text-primary">Payment Methods</p>
-              <p class="text-md pt-2">
+              <p class="text-xl font-medium text-primary dark:text-gray-100">Payment Methods</p>
+              <p class="text-md pt-2 dark:text-gray-50">
                 We Accept diverse payment methods as VISA, American Express, Mastercard, Cash, Crypto transfers through binance or Bitcoin, XRP and Litecoin.
               </p>
             </div>
             <div>
-              <p class="text-xl font-medium text-primary">Pets</p>
-              <p class="text-md pt-2">Pets allowment or prohibition in every stay will be under fully control of the Host</p>
+              <p class="text-xl font-medium text-primary dark:text-gray-100">Pets</p>
+              <p class="text-md pt-2 dark:text-gray-50">Pets allowment or prohibition in every stay will be under fully control of the Host</p>
             </div>
             <div>
-              <p class="text-xl font-medium text-primary">Security</p>
-              <p class="text-md pt-2">
+              <p class="text-xl font-medium text-primary dark:text-gray-100">Security</p>
+              <p class="text-md pt-2 dark:text-gray-50">
                 All our experiences have accident insurance.
               </p>
             </div>
             <div>
-              <p class="text-xl font-medium text-primary">Long Stays</p>
-              <p class="text-md pt-2">
+              <p class="text-xl font-medium text-primary dark:text-gray-100">Long Stays</p>
+              <p class="text-md pt-2 dark:text-gray-50">
                 In case of a long stay we require 50% of the total payment as an advance, we have long stays of maximum 3 months.
               </p>
             </div>
           </div>
         </div>
     </main>
-    <footer class="w-full h-auto bg-gray-50 md:mb-0">
+    <footer class="w-full h-auto bg-gray-50 md:mb-0 mb-16 dark:bg-gray-800">
       <div class="p-6 space-y-2 md:max-w-7xl md:mx-auto md:flex md:gap-10 md:justify-center md:items-center md:space-y-0">
-        <p class="text-lg">About</p>
+        <p class="text-lg dark:text-gray-100">About</p>
         <p class="text-sm text-gray-400 cursor-pointer">Investors</p>
         <p class="text-sm text-gray-400 cursor-pointer">Careers</p>
         <p class="text-sm text-gray-400 cursor-pointer">Terms and Conditions</p>
@@ -177,32 +177,46 @@
         <p class="text-sm text-gray-400 cursor-pointer">Follow Us</p>
       </div>
     </footer>
-    <div id="tab_bar" class="w-full h-16 bg-terciary fixed left-0 bottom-0 shadow-md flex gap-8 justify-center items-center md:hidden">
+    <div id="tab_bar" class="w-full h-16 bg-white fixed left-0 bottom-0 shadow-md flex gap-8 justify-center items-center md:hidden dark:bg-gray-900">
       <a href="#home">
-        <svg class="h-8 w-8 text-gray-200" viewBox="0 0 20 20" fill="currentColor">
+        <svg class="h-8 w-8 text-gray-300" viewBox="0 0 20 20" fill="currentColor">
           <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
         </svg>
       </a>
       <a href="#arstravel_choices">
-        <svg class="h-8 w-8 text-gray-200" viewBox="0 0 20 20" fill="currentColor">
+        <svg class="h-8 w-8 text-gray-300" viewBox="0 0 20 20" fill="currentColor">
           <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
         </svg>
       </a>
       <a href="#arstravel_highlights">
-        <svg class="h-8 w-8 text-gray-200" viewBox="0 0 20 20" fill="currentColor">
+        <svg class="h-8 w-8 text-gray-300" viewBox="0 0 20 20" fill="currentColor">
           <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
         </svg>
       </a>
       <a href="https://github.com/arselt">
-        <svg class="h-8 w-8 text-gray-200" viewBox="0 0 20 20" fill="currentColor">
+        <svg class="h-8 w-8 text-gray-300" viewBox="0 0 20 20" fill="currentColor">
           <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
         </svg>
       </a>
-      <button>
-        <svg class="h-8 w-8 text-gray-200" viewBox="0 0 20 20" fill="currentColor">
+      <button id="toggle_sm">
+        <svg class="h-8 w-8 text-gray-300 dark:text-primary" viewBox="0 0 20 20" fill="currentColor">
           <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
         </svg>
       </button>
     </div>
+    <script>
+      const htmlElement = document.querySelector("html")
+      const toggleButton = document.querySelector("#toggle")
+      const toggleButtonSm = document.querySelector("#toggle_sm")
+
+      toggleButton.addEventListener("click", () => toggleDarkMode())
+      toggleButtonSm.addEventListener("click", () => toggleDarkMode())
+      
+      const toggleDarkMode = () => {
+        htmlElement.classList.contains("dark") ?
+        htmlElement.classList.remove("dark") :
+        htmlElement.classList.add("dark")
+      }
+    </script>
 </body>
 </html>
