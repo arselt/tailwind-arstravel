@@ -615,13 +615,12 @@ video {
   bottom: 0px;
 }
 
-.m-6 {
-  margin: 1.5rem;
+.z-10 {
+  z-index: 10;
 }
 
-.mx-6 {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+.m-6 {
+  margin: 1.5rem;
 }
 
 .mb-6 {
@@ -630,10 +629,6 @@ video {
 
 .mr-24 {
   margin-right: 6rem;
-}
-
-.mt-6 {
-  margin-top: 1.5rem;
 }
 
 .flex {
@@ -646,6 +641,10 @@ video {
 
 .hidden {
   display: none;
+}
+
+.h-14 {
+  height: 3.5rem;
 }
 
 .h-auto {
@@ -684,16 +683,20 @@ video {
   width: 100%;
 }
 
-.w-36 {
-  width: 9rem;
-}
-
 .w-auto {
   width: auto;
 }
 
+.w-36 {
+  width: 9rem;
+}
+
 .w-8 {
   width: 2rem;
+}
+
+.max-w-7xl {
+  max-width: 80rem;
 }
 
 .cursor-pointer {
@@ -716,6 +719,10 @@ video {
   justify-content: center;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
 .gap-4 {
   gap: 1rem;
 }
@@ -724,26 +731,28 @@ video {
   gap: 2rem;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
 .gap-y-4 {
   row-gap: 1rem;
-}
-
-.space-y-96 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(24rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(24rem * var(--tw-space-y-reverse));
-}
-
-.space-y-2 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
 .space-y-80 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(20rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(20rem * var(--tw-space-y-reverse));
+}
+
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
 .overflow-x-auto {
@@ -772,14 +781,14 @@ video {
   border-bottom-left-radius: 0.5rem;
 }
 
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-secondary {
@@ -849,6 +858,10 @@ video {
   padding: 1.5rem;
 }
 
+.p-4 {
+  padding: 1rem;
+}
+
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -874,12 +887,17 @@ video {
   padding-right: 1.5rem;
 }
 
-.pl-8 {
+.px-8 {
   padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .pb-6 {
   padding-bottom: 1.5rem;
+}
+
+.pl-8 {
+  padding-left: 2rem;
 }
 
 .pt-2 {
@@ -915,6 +933,10 @@ video {
   line-height: 1.25rem;
 }
 
+.font-black {
+  font-weight: 900;
+}
+
 .font-extrabold {
   font-weight: 800;
 }
@@ -927,14 +949,18 @@ video {
   font-weight: 500;
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+.font-bold {
+  font-weight: 700;
 }
 
 .text-primary {
   --tw-text-opacity: 1;
   color: rgb(204 45 74 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .text-terciary {
@@ -950,6 +976,16 @@ video {
 .text-gray-200 {
   --tw-text-opacity: 1;
   color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+
+.text-gray-300 {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
 .shadow-sm {
@@ -993,15 +1029,6 @@ video {
 
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.scrollbar-hide {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
 }
 
 .focus-within\:shadow-sm:focus-within {
@@ -1161,25 +1188,5 @@ video {
 
   .md\:pl-8 {
     padding-left: 2rem;
-  }
-
-  .md\:scrollbar-default {
-    -ms-overflow-style: auto;
-    scrollbar-width: auto;
-  }
-
-  .md\:scrollbar-default::-webkit-scrollbar {
-    display: block;
-  }
-}
-
-@media (min-width: 1024px) {
-  .lg\:m-0 {
-    margin: 0px;
-  }
-
-  .lg\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
   }
 }
